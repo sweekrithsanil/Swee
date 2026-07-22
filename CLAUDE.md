@@ -2,83 +2,70 @@
 
 Guidance for AI assistants (and humans) working in the **Swee** repository.
 
-> **Status: Bootstrap / empty repository.**
-> As of the last update this repo contains no application source yet. This file
-> documents the conventions that already apply (git workflow, commit style) and
-> reserves clearly-marked placeholder sections to fill in as real code lands.
-> **When you add code, update the matching section below in the same change** —
-> keep this file honest about the *current* state, never aspirational.
+## What this repo is
 
-## Project overview
+**Swee is a personal knowledge & planning workspace — not a software project.**
+It's a place to think, collect, and plan across three areas:
 
-_TODO: One paragraph on what Swee is — the problem it solves, who uses it, and
-its core purpose. Replace this once the project's direction is set._
+1. **Mom's business (Mangalore)** — ideas, market notes, and a plan for
+   starting and running a small business in Mangalore, Karnataka.
+2. **Inspiration** — business/content ideas captured from Instagram reels and
+   LinkedIn, saved before they scroll away, then sorted into "worth trying".
+3. **Career** — goals, notes, and opportunities for the repo owner's own career.
 
-- **Name:** Swee
-- **Repository:** `sweekrithsanil/Swee`
-- **Language / stack:** _TODO — not yet chosen_
-- **Status:** pre-initial-commit
+Everything lives as plain **Markdown** so it's easy to read, search, edit on a
+phone, and keep in git. There is no code to build or run.
 
 ## Repository structure
 
-_TODO: Document the directory layout as it forms. Suggested format:_
-
 ```
 .
-├── CLAUDE.md          # This file — AI/developer guidance
-├── README.md          # Human-facing project intro
-└── .gitignore         # Ignored paths
+├── CLAUDE.md              # This file — guidance for AI assistants
+├── README.md              # Human-facing intro
+├── mom-business/          # Everything about mom's Mangalore business
+│   ├── README.md          #   Overview + how this folder is organized
+│   ├── ideas.md           #   Running list of business ideas (with a template)
+│   ├── plan.md            #   Startup checklist: registration, budget, launch
+│   └── research.md        #   Local market notes (competitors, costs, suppliers)
+├── inspiration/           # Ideas captured from social media
+│   ├── reels.md           #   Ideas seen in Instagram reels / short videos
+│   └── linkedin.md        #   Ideas/posts/quotes from LinkedIn
+└── career/
+    └── README.md          # Career goals, skills to learn, opportunities
 ```
 
-Update this tree whenever you add a top-level directory, and note what each one
-is responsible for.
+Update this tree whenever you add or rename a top-level folder.
 
-## Development workflow
+## How to work in this repo
 
-_TODO: Fill in once tooling exists. Capture the real commands, e.g.:_
-
-- **Install dependencies:** _TODO_
-- **Run locally:** _TODO_
-- **Build:** _TODO_
-- **Test:** _TODO_
-- **Lint / format:** _TODO_
-
-Prefer documenting commands that actually exist in the repo (a `Makefile`,
-`package.json` scripts, etc.) over generic advice.
+- **Capturing an idea?** Add a dated entry to the right file
+  (`inspiration/reels.md`, `inspiration/linkedin.md`, or
+  `mom-business/ideas.md`) using the template already at the top of that file.
+  Don't delete old ideas — mark them `[done]`, `[dropped]`, or `[trying]`
+  instead, so the history stays.
+- **Keep it in the owner's words.** This is a personal workspace. When asked to
+  add or summarize, match the plain, practical tone of what's already there —
+  don't turn it into a corporate document.
+- **Localize to Mangalore.** For the business, prefer concrete, local details
+  (rupees, local suppliers, local platforms, Kannada/Tulu where relevant) over
+  generic advice.
+- **Dates:** use `YYYY-MM-DD` so entries sort naturally.
 
 ## Git & branch conventions
 
-These conventions are already in force:
-
-- **Feature branches** follow the pattern `claude/<short-topic>-<suffix>`
+- **Feature branches** follow `claude/<short-topic>-<suffix>`
   (e.g. `claude/claude-md-docs-5fd3yj`). Develop on the assigned branch; never
-  push directly to the default branch without explicit permission.
-- **Create the branch locally** if it doesn't exist, commit your work with
-  clear, descriptive messages, then `git push -u origin <branch-name>`.
-- **Commit messages:** imperative mood, concise subject line (≤ ~72 chars),
-  with a body explaining *why* when the change isn't self-evident.
-- **Pull requests:** only open one when explicitly requested. If a PR template
-  exists under `.github/`, mirror its structure.
-
-## Coding conventions
-
-_TODO: Record the real conventions once a language is chosen — naming, file
-organization, formatting rules, error-handling patterns, and any linters/
-formatters that enforce them. Until then, match whatever style the first
-committed code establishes, and prefer the project's existing idioms over
-personal preference._
-
-## Testing
-
-_TODO: Describe the test framework, where tests live, how to run the full suite
-vs. a single test, and the expectation for new code (e.g. "every new module
-ships with tests")._
+  push to the default branch without explicit permission.
+- Create the branch locally if needed, commit with clear messages, then
+  `git push -u origin <branch-name>`.
+- **Commit messages:** imperative mood, concise subject (≤ ~72 chars), with a
+  short body when the *why* isn't obvious.
+- **Pull requests:** only open one when explicitly requested.
 
 ## Notes for AI assistants
 
-- This is the primary memory file. Keep it current: when you change how the
-  project is built, run, or structured, update the relevant section here in the
-  **same** commit.
-- Do not fabricate structure. If a section is still a placeholder, leave the
-  `TODO` marker rather than inventing details that aren't in the codebase.
-- Follow the git & branch conventions above for every change.
+- This is the primary memory file. If the repo's purpose or structure changes,
+  update the relevant section here in the **same** commit.
+- Don't fabricate detail. If you don't know a real fact about the business
+  (budget, location, product), leave a clearly-marked `TODO` and ask, rather
+  than inventing it.

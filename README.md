@@ -1,18 +1,22 @@
 # Swee
 
-> _TODO: One-line description of what Swee is._
+A personal planning & ideas workspace. Three things live here:
 
-This repository is in its early bootstrap stage.
+- **`mom-business/`** — planning a small business in Mangalore: ideas, a
+  startup checklist, and local market notes.
+- **`inspiration/`** — business and content ideas captured from Instagram reels
+  and LinkedIn before they scroll away.
+- **`career/`** — career goals, skills, and opportunities.
 
-## Getting started
+Everything is plain Markdown, so it's easy to edit anywhere (even on a phone)
+and search. Nothing to install or run.
 
-_TODO: Add setup, run, and build instructions once the stack is chosen._
+## How to use it
 
-## Contributing
+1. See an idea in a reel or on LinkedIn? Drop it into the matching file in
+   `inspiration/` using the template at the top.
+2. When an idea feels worth pursuing for the business, move it into
+   `mom-business/ideas.md`.
+3. Turning an idea into a real plan? Use `mom-business/plan.md`.
 
-Development happens on feature branches (`claude/<topic>-<suffix>`). See
-[`CLAUDE.md`](./CLAUDE.md) for the full workflow, commit style, and conventions.
-
-## License
-
-_TODO: Choose and add a license._
+See [`CLAUDE.md`](./CLAUDE.md) for the full conventions.
