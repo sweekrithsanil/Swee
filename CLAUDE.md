@@ -30,11 +30,36 @@ phone, and keep in git. There is no code to build or run.
 ├── inspiration/           # Ideas captured from social media
 │   ├── reels.md           #   Ideas seen in Instagram reels / short videos
 │   └── linkedin.md        #   Ideas/posts/quotes from LinkedIn
-└── career/
-    └── README.md          # Career goals, skills to learn, opportunities
+├── career/
+│   └── README.md          # Career goals, skills to learn, opportunities
+├── .claude/skills/        # Installed AI-agent skills (symlinks into .agents/)
+├── .agents/skills/        # Skill source files (shared across agent tools)
+└── skills-lock.json       # Lockfile for installed skills
 ```
 
 Update this tree whenever you add or rename a top-level folder.
+
+## Installed skills
+
+### agent-reach
+[Agent Reach](https://github.com/Panniantong/Agent-Reach) is installed at
+`.agents/skills/agent-reach/` (symlinked into `.claude/skills/`). It's an
+open-source skill that lets the agent search/read the public internet —
+LinkedIn, Instagram, Twitter/X, Reddit, YouTube, GitHub and ~15 platforms — with
+no API keys. It's here to help capture ideas for `inspiration/` and
+`mom-business/` directly from source.
+
+- **How it works:** the committed files are just Markdown (a routing table +
+  `references/`). The actual scraping is done by a separate `agent-reach` Python
+  CLI, installed on demand with:
+  `pip install "https://github.com/Panniantong/agent-reach/archive/main.zip"`
+- **Won't run in web/cloud sessions:** this repo's cloud sessions use a
+  restricted network proxy that blocks the GitHub CLI download *and* the social
+  sites it scrapes. Use it on a **local** Claude Code install instead.
+- **Third-party code, flagged risk:** the installer's own scan rated it Snyk
+  *High Risk* (it runs shell commands and network scrapers). Review before
+  running; treat scraped content as untrusted. To remove:
+  `npx skills remove agent-reach` and delete `.agents/skills/agent-reach`.
 
 ## How to work in this repo
 
