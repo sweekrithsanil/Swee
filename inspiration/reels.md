@@ -18,16 +18,19 @@ here before they scroll away, then move the good ones to
 
 <!-- Add saved reels below this line -->
 
-## "App or game?" — AI-built interactive dashboard — 2026-10-06
+## "App or game?" — AI-built game-style business software — 2026-10-06
 - **Link:** https://www.instagram.com/reel/DeJAVUkTZsE/ (by @buildai.with.shubh)
-- **The idea:** Thumbnail shows a warehouse/logistics dashboard (stock on hand,
-  trucks on site, on-time delivery) built as a playable, game-style 3D scene,
-  tagged "built with Claude Opus 5.5". Seems to be about whether an AI-built
-  thing should be an app or a game. Video credit on screen: @dilumsanjaya.
-  TODO: only the thumbnail could be read (no caption/audio) — add the actual
-  takeaway after watching.
-- **Could we use it for:** career | just interesting (TODO: decide after watching)
+- **The idea:** Dilum Sanjaya (software engineer, @DilumSanjaya on X) built a
+  warehouse management tool with Claude Opus 5.5 that looks and plays like a
+  strategy game: trucks rolling in, forklifts loading pallets, live stock
+  numbers on the side. The pitch: boring industry tools are about to get this
+  "game-style" upgrade, and whoever builds it first wins. Suggested industries:
+  hospitals, farms, schools, delivery fleets.
+- **Could we use it for:** career (build a game-style dashboard as a portfolio
+  project) | mom's business (TODO: a simple visual stock/orders view, only if it
+  fits what she actually sells — not decided) | just interesting
 - **Status:** new
+  (Read from the caption only; the audio wasn't transcribed.)
 
 ## Example entry — 2026-07-22
 - **Link:** (paste reel URL)
