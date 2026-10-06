@@ -5,13 +5,16 @@ Guidance for AI assistants (and humans) working in the **Swee** repository.
 ## What this repo is
 
 **Swee is a personal knowledge & planning workspace — not a software project.**
-It's a place to think, collect, and plan across three areas:
+It's a place to think, collect, and plan across four areas:
 
 1. **Mom's business (Mangalore)** — ideas, market notes, and a plan for
    starting and running a small business in Mangalore, Karnataka.
 2. **Inspiration** — business/content ideas captured from Instagram reels and
    LinkedIn, saved before they scroll away, then sorted into "worth trying".
 3. **Career** — goals, notes, and opportunities for the repo owner's own career.
+4. **Venture** — a business idea of the repo owner's own: game-style dashboards
+   for small businesses, with a business model and an automated AI-video
+   distribution plan (`venture/`).
 
 Everything lives as plain **Markdown** so it's easy to read, search, edit on a
 phone, and keep in git. There is no code to build or run.
@@ -32,6 +35,9 @@ phone, and keep in git. There is no code to build or run.
 │   └── linkedin.md        #   Ideas/posts/quotes from LinkedIn
 ├── career/
 │   └── README.md          # Career goals, skills to learn, opportunities
+├── venture/               # Game-style dashboards for small businesses
+│   ├── business-model.md  #   Who it's for, what we sell, pricing, risks
+│   └── distribution.md    #   Automated AI-video distribution plan
 ├── .claude/skills/        # Installed AI-agent skills (symlinks into .agents/)
 ├── .agents/skills/        # Skill source files (shared across agent tools)
 └── skills-lock.json       # Lockfile for installed skills
